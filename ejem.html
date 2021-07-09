@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Acámica</title>
+</head>
+<body>
+    <h1>Formulario de inscripción a Acámica</h1>
+    <form action="#">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="name" placeholder="Ingrese su nombre" required>  
+            <br><br>
+            <label for="lastname">Apellido</label>
+            <input type="text" name="lastname" id="lastname" placeholder="Ingrese su apellido" required>
+            <br><br>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="youremail@email.com" required>
+            <br><br>
+            <label for="country">País</label>
+            <select name="country" id="country" required>
+                <option value="argentina">Argentina</option>
+                <option value="chile">Chile</option>
+                <option value="peru">Peru</option>
+                <option value="mejico">Méjico</option>
+                <option value="venezuela">Venezuela</option>
+                <option value="colombia">Colombia</option>
+                <option value="bolivia">Bolivia</option>
+                <option value="uruguay">Uruguay</option>
+            </select>
+            <br><br>
+            <label for="phone">Teléfono de contacto</label>
+            <input type="number" id="phone" name="phone">
+        </fieldset>
+        <fieldset>
+            <legend> <strong>Carrera a inscribirse</strong> </legend>
+            <p>
+                <input type="checkbox" name="boxselect[]" id="carrera1" value="ux/ui" required> UX/UI <br>
+                <input type="checkbox" name="boxselect[]" id="carrera2" value="data-science" required> Data Science <br>
+                <input type="checkbox" name="boxselect[]" id="carrera3" value="desarrollo-web-full-stack" required> Desarrollo Web Full Stack <br>
+                <input type="checkbox" name="boxselect[]" id="carrera4" value="front-end-avanzado" required> Front-End Avanzado <br>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Modalidad</legend>
+            <p>
+                <input type="radio" name="modalidad" id="presencial" value="Presencial"> Presencial <br>
+                <input type="radio" name="modalidad" id="online" value="Online"> Online <br>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>¿Trabajás actualmente?</legend>
+                <input type="radio" name="trabajo" id="si" value="si"> Si <br>
+                <input type="radio" name="trabajo" id="no" value="no"> No <br>
+        </fieldset>
+        <br>
+        <br>
+        <input type="submit" value="Enviar!">
+        <input type="reset" value="Reiniciar :(">
+    </form>
+</body>
+</html>
